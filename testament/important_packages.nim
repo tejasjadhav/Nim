@@ -52,5 +52,5 @@ pkg "regex", "nim c src/regex"
 pkg "rosencrantz", "nim c -o:rsncntz rosencrantz.nim"
 pkg "sdl1", "nim c src/sdl.nim"
 pkg "sdl2_nim", "nim c sdl2/sdl.nim"
-pkg "stint", "nim c -o:stintt stint.nim" # nimble test gives: Error: number out of range: '1_000_000_000_000_000_000_000'u64'
+# pkg "stint", "nim c -o:stintt stint.nim" # nimble test gives: Error: number out of range: '1_000_000_000_000_000_000_000'u64'
 pkg "zero_functional", "nim c test.nim"
