@@ -20,23 +20,27 @@ pkg "yaml", "nim c test/tests.nim" # ../yaml/serialization.nim(146, 33) Error: c
 ]#
 
 
-pkg "alea"
-pkg "arraymancer", "nim c src/arraymancer.nim"
+pkg "alea", "", "", true
+# pkg "arraymancer", "nim c src/arraymancer.nim"
 pkg "c2nim"
 pkg "cligen", "nim c -o:cligenn cligen.nim"
 pkg "docopt"
 pkg "gara", "nim c tests/test_gara.nim"
 pkg "glob"
 pkg "gnuplot"
+pkg "hts", "nim c tests/all.nim"
 pkg "inim"
 pkg "itertools", "nim doc src/itertools.nim"
 pkg "iterutils"
+pkg "jnim", "nim c --threads:on tests/test_all.nim"
 pkg "karax", "nim c tests/tester.nim"
 pkg "loopfusion"
-pkg "neo"
+pkg "nake", "nim c nakefile.nim"
+# pkg "neo"
 pkg "nigui", "nim c -o:niguii src/nigui.nim"
-pkg "NimData"
-pkg "nimes", "nim c src/nimes.nim"
+pkg "NimData", "nim c -o:nimdataa src/nimdata.nim"
+pkg "nimes", "nim c src/nimes.nim", "", true
+pkg "nimgame2", "nim c nimgame2/nimgame.nim", "", true
 pkg "nimongo", "nimble test_ci", "", true
 pkg "nimpy", "nim c -o:nimpyy nimpy.nim"
 pkg "nimx", "nim c --threads:on test/main.nim", "", true
@@ -45,7 +49,8 @@ pkg "patty"
 pkg "plotly", "nim c examples/all.nim", "", true
 pkg "protobuf", "nim c -o:protobuff src/protobuf.nim", "", true
 pkg "regex", "nim c src/regex"
-pkg "rosencrantz"
+pkg "rosencrantz", "nim c -o:rsncntz rosencrantz.nim"
 pkg "sdl1", "nim c src/sdl.nim"
+pkg "sdl2_nim", "nim c sdl2/sdl.nim"
 pkg "stint", "nim c -o:stintt stint.nim" # nimble test gives: Error: number out of range: '1_000_000_000_000_000_000_000'u64'
 pkg "zero_functional", "nim c test.nim"
