@@ -22,8 +22,11 @@ pkg "yaml", "nim c test/tests.nim" # ../yaml/serialization.nim(146, 33) Error: c
 
 # pkg "alea", "", "", true
 # pkg "arraymancer", "nim c src/arraymancer.nim"
+pkg "ast_pattern_matching", "nim c tests/test1.nim"
 pkg "c2nim"
 pkg "cligen", "nim c -o:cligenn cligen.nim"
+pkg "compactdict", "nim c tests/test1.nim"
+pkg "criterion"
 pkg "docopt"
 pkg "gara", "nim c tests/test_gara.nim"
 pkg "glob"
@@ -38,11 +41,12 @@ pkg "loopfusion"
 pkg "nake", "nim c nakefile.nim"
 # pkg "neo"
 pkg "nigui", "nim c -o:niguii src/nigui.nim"
-pkg "NimData", "nim c -o:nimdataa src/nimdata.nim"
+pkg "NimData", "nim c -o:nimdataa src/nimdata.nim", "", true
 pkg "nimes", "nim c src/nimes.nim", "", true
 pkg "nimgame2", "nim c nimgame2/nimgame.nim", "", true
 pkg "nimongo", "nimble test_ci", "", true
 pkg "nimpy", "nim c -o:nimpyy nimpy.nim"
+pkg "nimsl", "nim c test.nim"
 pkg "nimx", "nim c --threads:on test/main.nim", "", true
 pkg "parsetoml"
 pkg "patty"
