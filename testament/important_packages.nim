@@ -20,7 +20,7 @@ pkg "yaml", "nim c test/tests.nim" # ../yaml/serialization.nim(146, 33) Error: c
 ]#
 
 
-pkg "alea", "", "", true
+# pkg "alea", "", "", true
 # pkg "arraymancer", "nim c src/arraymancer.nim"
 pkg "c2nim"
 pkg "cligen", "nim c -o:cligenn cligen.nim"
@@ -32,7 +32,7 @@ pkg "hts", "nim c tests/all.nim"
 pkg "inim"
 pkg "itertools", "nim doc src/itertools.nim"
 pkg "iterutils"
-pkg "jnim", "nim c --threads:on tests/test_all.nim"
+# pkg "jnim", "nim c --threads:on tests/test_all.nim"
 pkg "karax", "nim c tests/tester.nim"
 pkg "loopfusion"
 pkg "nake", "nim c nakefile.nim"
@@ -52,5 +52,5 @@ pkg "regex", "nim c src/regex"
 pkg "rosencrantz", "nim c -o:rsncntz rosencrantz.nim"
 pkg "sdl1", "nim c src/sdl.nim"
 pkg "sdl2_nim", "nim c sdl2/sdl.nim"
-# pkg "stint", "nim c -o:stintt stint.nim" # nimble test gives: Error: number out of range: '1_000_000_000_000_000_000_000'u64'
+pkg "stint", "nim c -o:stintt stint.nim" # nimble test gives: Error: number out of range: '1_000_000_000_000_000_000_000'u64'
 pkg "zero_functional", "nim c test.nim"
